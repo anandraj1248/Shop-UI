@@ -124,6 +124,31 @@ main .pg-header h1{
   padding-bottom: 10px;
 }
 
+.single h2::after{
+   position: absolute;
+   content: "";
+   width: 50px;
+   bottom: -6px;
+   height: 2px;
+   background-color: #666;
+   left: 0;
+}
+
+.single .btn-primary{
+  font-weight: 600;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.single .price{
+  font-size: 22px;
+}
+
+.single .price strong{
+  color: #0a58ca;
+}
+
+
 /*POSTS*/
 .posts .col-sm-6{
   margin-bottom: 20px;
@@ -135,4 +160,77 @@ main .pg-header h1{
 
 .posts .card-text{
   text-align: center;
+}
+
+/*Header*/
+header{
+  padding: 20px 0;
+  background-color: #000;
+}
+header .logo{
+  transform: rotate(-6deg);
+  transition: all 0.3s ease;
+}
+header .logo:hover{
+  transform: rotate(0deg);
+}
+
+header .brand{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Leckerli One',cursive;
+  background-color: #2d2d2d;
+  border-radius: 40px;
+  border-bottom: 2px solid #6294de;
+  text-shadow: 2px 2px 0px #000;
+}
+
+header .nav-link{
+  font-weight: 700;
+  color: #999;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+header .nav-link:hover{
+  color: #fff;
+}
+
+/*Footer*/
+footer{
+  padding: 40px 0 100px 0;
+  background-color: #282828;
+
+}
+
+footer .nav-link{
+  color: rgba(255,255,255,.75);
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 10px;
+}
+
+footer .nav-link:hover{
+  color: #fff;
+
+}
+
+footer .nav-link.active{
+  color: #fff;
+  border-bottom: 1px solid #666;
+}
+
+footer .copyrights{
+  color: rgba(255,255,255,.75);
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer .copyrights a{
+  color: rgba(255,255,255,.75);
+}
+
+footer .copyrights a:hover{
+  color: #fff;
 }

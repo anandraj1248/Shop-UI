@@ -5,15 +5,17 @@ const Footer = () => {
   return (
    <footer className='footer'>
       <div className='container'>
+
         <nav className='d-flex justify-content-center'>
-        <div className='nav nav-pills'>
-        <Link to='/' className=''>Home</Link>
-        <Link to='about' className=''>About</Link>
-        <Link to='products' className=''>Products</Link>
-        <Link to='posts' className=''>Posts</Link>
-      </div>
+          <NavLink to='/' className={(navData) => navData.isActive ? 'nav-link active': 'nav-link'}>Home</NavLink>
+          <NavLink to='about' className={(navData) => navData.isActive ? 'nav-link active': 'nav-link'}>About</NavLink>
+          <NavLink to='products' className={(navData) => navData.isActive ? 'nav-link active': 'nav-link'}>Products</NavLink>
+          <NavLink to='posts' className={(navData) => navData.isActive ? 'nav-link active': 'nav-link'}>Posts</NavLink>
         </nav>
-      
+      <div className='copyrights'>
+          &copy; 2022 <Link to="/">ReactRouter</Link>-All Rights Reserved
+      </div>
+
       </div>
       
    </footer>
